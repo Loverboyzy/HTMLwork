@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="第十四届2025年全国全运会专题网站">
+    <meta name="keywords" content="2025年全国全运会,体育赛事,运动员,赛程">
+    <meta name="theme-color" content="#0066cc">
+    <title>联系我们 - 2025年全国全运会</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" role="navigation" aria-label="主导航">
+        <div class="container">
+            <div class="logo">
+                <h1>2025年全国全运会</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="events.html">赛事介绍</a></li>
+                <li><a href="athletes.html">运动员展示</a></li>
+                <li><a href="schedule.html">赛程日程</a></li>
+                <li><a href="news.html">新闻动态</a></li>
+                <li><a href="contact.html" class="active">联系我们</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main id="main-content" role="main">
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <div class="container">
+            <h1>联系我们</h1>
+            <p>我们期待您的宝贵意见</p>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>地址</h3>
+                    <p>广东省珠海市横琴体育中心</p>
+                    <p>2025年全国全运会组委会</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>电话</h3>
+                    <p>总机：010-12345678</p>
+                    <p>票务：400-123-4567</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>邮箱</h3>
+                    <p>info@games2025.com</p>
+                    <p>media@games2025.com</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">⏰</div>
+                    <h3>工作时间</h3>
+                    <p>周一至周五：9:00-18:00</p>
+                    <p>周末及节假日：10:00-17:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 反馈表单 -->
+    <section class="feedback-section">
+        <div class="container">
+            <h2 class="section-title">意见反馈</h2>
+            <form id="feedbackForm" class="feedback-form">
+                <div class="form-group">
+                    <label for="name">姓名 <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">邮箱 <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">电话</label>
+                    <input type="tel" id="phone" name="phone">
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">反馈类型 <span class="required">*</span></label>
+                    <select id="category" name="category" required>
+                        <option value="">请选择</option>
+                        <option value="ticket">票务咨询</option>
+                        <option value="venue">场馆信息</option>
+                        <option value="schedule">赛程安排</option>
+                        <option value="media">媒体合作</option>
+                        <option value="other">其他</option>
+                    </select>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">主题 <span class="required">*</span></label>
+                    <input type="text" id="subject" name="subject" required>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">详细描述 <span class="required">*</span></label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" id="agree" name="agree" required>
+                        我已阅读并同意 <a href="#">隐私政策</a> <span class="required">*</span>
+                    </label>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">提交反馈</button>
+                    <button type="reset" class="reset-btn">重置表单</button>
+                </div>
+            </form>
+
+            <div id="successMessage" class="success-message" style="display: none;">
+                <p>✅ 感谢您的反馈！我们已收到您的信息，会尽快处理。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 地图 -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">场馆位置</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <p>📍 地图位置</p>
+                    <p>广东省珠海市横琴体育中心</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>2025年全国全运会</h3>
+                    <p>激情与梦想的盛会</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="events.html">赛事介绍</a></li>
+                        <li><a href="athletes.html">运动员</a></li>
+                        <li><a href="schedule.html">赛程</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>联系我们</h3>
+                    <p>邮箱: info@games2025.com</p>
+                    <p>电话: 400-123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025年全国全运会. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/interactions.js"></script>
+    <script src="js/enhanced-interactions.js"></script>
+</body>
+</html>

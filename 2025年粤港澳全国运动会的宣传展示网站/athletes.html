@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="2025年第十五届全国全运会专题网站">
+    <meta name="keywords" content="全国全运会,2025全运会,体育赛事,运动员,赛程">
+    <meta name="theme-color" content="#0066cc">
+    <title>运动员展示 - 2025年全国全运会</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" role="navigation" aria-label="主导航">
+        <div class="container">
+            <div class="logo">
+                <h1>2025年全国全运会</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="events.html">赛事介绍</a></li>
+                <li><a href="athletes.html" class="active">运动员展示</a></li>
+                <li><a href="schedule.html">赛程日程</a></li>
+                <li><a href="news.html">新闻动态</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main id="main-content" role="main">
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <div class="container">
+            <h1>运动员展示</h1>
+            <p>认识赛场上的英雄们</p>
+        </div>
+    </section>
+
+    <!-- 运动员筛选和卡片 - 纯CSS实现筛选 -->
+    <section class="athletes-section">
+        <div class="container">
+            <!-- 隐藏的radio按钮 -->
+            <input type="radio" name="athlete-filter" id="filter-all" class="filter-radio" checked>
+            <input type="radio" name="athlete-filter" id="filter-track" class="filter-radio">
+            <input type="radio" name="athlete-filter" id="filter-swimming" class="filter-radio">
+            <input type="radio" name="athlete-filter" id="filter-ball" class="filter-radio">
+            <input type="radio" name="athlete-filter" id="filter-shooting" class="filter-radio">
+
+            <!-- 筛选按钮 -->
+            <div class="filter-buttons">
+                <label for="filter-all" class="filter-btn">全部</label>
+                <label for="filter-track" class="filter-btn">田径</label>
+                <label for="filter-swimming" class="filter-btn">游泳</label>
+                <label for="filter-ball" class="filter-btn">球类</label>
+                <label for="filter-shooting" class="filter-btn">气步枪</label>
+            </div>
+
+            <!-- 运动员卡片 -->
+            <div class="athletes-grid">
+                <div class="athlete-card" data-category="track">
+                    <div class="athlete-image">
+                        <img src="./images/苏炳添.jpg" alt="苏炳添 - 田径">
+                    </div>
+                    <div class="athlete-info">
+                        <h3>苏炳添</h3>
+                        <p class="sport">田径 - 短跑</p>
+                        <p class="achievement">🏆亚洲飞人</p>
+                        <p class="description">男子60米、100米亚洲纪录保持者（6.42秒、9.83秒）</p>
+                    </div>
+                </div>
+
+                <div class="athlete-card" data-category="swimming">
+                    <div class="athlete-image">
+                        <img src="./images/孙杨.jpg" alt="孙杨 - 游泳">
+                    </div>
+                    <div class="athlete-info">
+                        <h3>孙杨</h3>
+                        <p class="sport">游泳 - 自由泳</p>
+                        <p class="achievement">🏆 世界游泳名将</p>
+                        <p class="description">历史上首位集男子200米自由泳、400米自由泳、1500米自由泳奥运会金牌于一身的游泳运动员。</p>
+                    </div>
+                </div>
+
+                <div class="athlete-card" data-category="ball">
+                    <div class="athlete-image">
+                        <img src="./images/周琦.jpg" alt="周琦 - 篮球">
+                    </div>
+                    <div class="athlete-info">
+                        <h3>周琦</h3>
+                        <p class="sport">篮球 - 中锋</p>
+                        <p class="achievement">🏆 中国篮球未来之星</p>
+                        <p class="description">技术全面，场均得分25+，是球队的绝对核心。</p>
+                    </div>
+                </div>
+
+                <div class="athlete-card" data-category="ball">
+                    <div class="athlete-image">
+                        <img src="./images/石宇奇.jpg" alt="石宇奇 - 羽毛球">
+                    </div>
+                    <div class="athlete-info">
+                        <h3>石宇奇</h3>
+                        <p class="sport">羽毛球-男单</p>
+                        <p class="achievement">🏆 中国羽毛球男子单打项目运动员、世界冠军</p>
+                        <p class="description">夺得世锦赛男单冠军，还帮助中国队实现了苏迪曼杯四连冠。</p>
+                    </div>
+                </div>
+
+                <div class="athlete-card" data-category="ball">
+                    <div class="athlete-image">
+                        <img src="./images/马龙.jpg" alt="马龙 - 兵乓球">
+                    </div>
+                    <div class="athlete-info">
+                        <h3>马龙</h3>
+                        <p class="sport">兵乓球-男单</p>
+                        <p class="achievement">🏆 乒乓球的GOAT</p>
+                        <p class="description">是首位集奥运会、世锦赛、世界杯、亚运会、亚锦赛、亚洲杯、巡回赛总决赛、全运会单打冠军于一身的超级全满贯男子选手</p>
+                    </div>
+                </div>
+
+                <div class="athlete-card" data-category="ball">
+                    <div class="athlete-image">
+                        <img src="./images/巩立姣.jpg" alt="巩立姣 - 铅球">
+                    </div>
+                    <div class="athlete-info">
+                        <h3>巩立姣</h3>
+                        <p class="sport">铅球</p>
+                        <p class="achievement">🏆 奥运会金牌</p>
+                        <p class="description">2025年十五运会女子铅球冠军</p>
+                    </div>
+                </div>
+
+                <div class="athlete-card" data-category="ball">
+                    <div class="athlete-image">
+                        <img src="./images/朱婷 .jpg" alt="朱婷 - 排球">
+                    </div>
+                    <div class="athlete-info">
+                        <h3>朱婷</h3>
+                        <p class="sport">排球 - 主攻</p>
+                        <p class="achievement">🏆 世界女排联赛MVP</p>
+                        <p class="description">扣球力量大，一传技术好，球队的灵魂人物。</p>
+                    </div>
+                </div>
+
+                <div class="athlete-card" data-category="track">
+                    <div class="athlete-image">
+                        <img src="./images/吴艳妮.jpg" alt="吴艳妮- 田径">
+                    </div>
+                    <div class="athlete-info">
+                        <h3>吴艳妮</h3>
+                        <p class="sport">田径 - 100米跨栏</p>
+                        <p class="achievement">🏆 全国锦标赛冠军</p>
+                        <p class="description">跨栏女神</p>
+                    </div>
+                </div>
+
+                <div class="athlete-card" data-category="shooting">
+                    <div class="athlete-image">
+                        <img src="./images/盛李豪.jpg" alt="盛李豪 - 气步枪">
+                    </div>
+                    <div class="athlete-info">
+                        <h3>盛李豪</h3>
+                        <p class="sport">气步枪</p>
+                        <p class="achievement">🏆 奥运会冠军</p>
+                        <p class="description">两枚奥运金牌获得者</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>2025年全国全运会</h3>
+                    <p>激情与梦想的盛会</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="events.html">赛事介绍</a></li>
+                        <li><a href="athletes.html">运动员</a></li>
+                        <li><a href="schedule.html">赛程</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>联系我们</h3>
+                    <p>邮箱: info@games2025.com</p>
+                    <p>电话: 400-123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 全国全运会. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/interactions.js"></script>
+    <script src="js/enhanced-interactions.js"></script>
+</body>
+</html>

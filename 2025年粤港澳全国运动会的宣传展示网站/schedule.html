@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="第十四届2025年全国全运会专题网站">
+    <meta name="keywords" content="2025年全国全运会,体育赛事,运动员,赛程">
+    <meta name="theme-color" content="#0066cc">
+    <title>赛程日程 - 2025年全国全运会</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" role="navigation" aria-label="主导航">
+        <div class="container">
+            <div class="logo">
+                <h1>2025年全国全运会</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="events.html">赛事介绍</a></li>
+                <li><a href="athletes.html">运动员展示</a></li>
+                <li><a href="schedule.html" class="active">赛程日程</a></li>
+                <li><a href="news.html">新闻动态</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main id="main-content" role="main">
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <div class="container">
+            <h1>赛程日程</h1>
+            <p>掌握最新比赛时间安排</p>
+        </div>
+    </section>
+
+    <!-- 赛程筛选和内容 - 纯CSS实现 -->
+    <section class="schedule-section">
+        <div class="container">
+            <!-- 隐藏的radio按钮 -->
+            <input type="radio" name="schedule-filter" id="schedule-day1" class="schedule-radio" checked>
+            <input type="radio" name="schedule-filter" id="schedule-day2" class="schedule-radio">
+            <input type="radio" name="schedule-filter" id="schedule-day3" class="schedule-radio">
+            <input type="radio" name="schedule-filter" id="schedule-day4" class="schedule-radio">
+            <input type="radio" name="schedule-filter" id="schedule-day5" class="schedule-radio">
+
+            <!-- 日期选择按钮 -->
+            <div class="date-tabs">
+                <label for="schedule-day1" class="date-tab-btn">
+                    <span class="day">第一天</span>
+                    <span class="date">11月9日</span>
+                </label>
+                <label for="schedule-day2" class="date-tab-btn">
+                    <span class="day">第二天</span>
+                    <span class="date">11月10日</span>
+                </label>
+                <label for="schedule-day3" class="date-tab-btn">
+                    <span class="day">第三天</span>
+                    <span class="date">11月11日</span>
+                </label>
+                <label for="schedule-day4" class="date-tab-btn">
+                    <span class="day">第四天</span>
+                    <span class="date">11月12日</span>
+                </label>
+                <label for="schedule-day5" class="date-tab-btn">
+                    <span class="day">第五天</span>
+                    <span class="date">11月13日</span>
+                </label>
+            </div>
+
+            <!-- 赛程内容 -->
+            <div class="schedule-content-wrapper">
+                <!-- 第一天 -->
+                <div class="date-content" id="day1">
+                    <h2 class="date-title">第一天 - 11月9日</h2>
+                    <div class="schedule-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-time">08:00</div>
+                            <div class="timeline-event">
+                                <h4>开幕式</h4>
+                                <p>地点：主体育场</p>
+                                <span class="venue-tag">主体育场</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">09:30</div>
+                            <div class="timeline-event">
+                                <h4>男子100米预赛</h4>
+                                <p>参赛队伍：全国各省市代表队</p>
+                                <span class="venue-tag">田径场</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">10:30</div>
+                            <div class="timeline-event">
+                                <h4>女子跳高预赛</h4>
+                                <p>参赛队伍：全国各省市代表队</p>
+                                <span class="venue-tag">田径场</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">14:00</div>
+                            <div class="timeline-event">
+                                <h4>游泳项目开赛</h4>
+                                <p>男子400米自由泳、女子200米仰泳等</p>
+                                <span class="venue-tag">游泳馆</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">16:00</div>
+                            <div class="timeline-event">
+                                <h4>男子篮球小组赛</h4>
+                                <p>A组 vs B组</p>
+                                <span class="venue-tag">篮球馆</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第二天 -->
+                <div class="date-content" id="day2">
+                    <h2 class="date-title">第二天 - 11月10日</h2>
+                    <div class="schedule-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-time">09:00</div>
+                            <div class="timeline-event">
+                                <h4>男子100米半决赛</h4>
+                                <p>晋级选手争夺决赛资格</p>
+                                <span class="venue-tag">田径场</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">10:00</div>
+                            <div class="timeline-event">
+                                <h4>女子跳高决赛</h4>
+                                <p>金牌争夺战</p>
+                                <span class="venue-tag">田径场</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">14:30</div>
+                            <div class="timeline-event">
+                                <h4>游泳决赛</h4>
+                                <p>男子400米自由泳、女子200米仰泳决赛</p>
+                                <span class="venue-tag">游泳馆</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">19:00</div>
+                            <div class="timeline-event">
+                                <h4>女子排球小组赛</h4>
+                                <p>C组 vs D组</p>
+                                <span class="venue-tag">排球馆</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第三天 -->
+                <div class="date-content" id="day3">
+                    <h2 class="date-title">第三天 - 11月11日</h2>
+                    <div class="schedule-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-time">09:30</div>
+                            <div class="timeline-event">
+                                <h4>男子100米决赛</h4>
+                                <p>万众瞩目的金牌争夺</p>
+                                <span class="venue-tag">田径场</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">11:00</div>
+                            <div class="timeline-event">
+                                <h4>女子800米决赛</h4>
+                                <p>中长跑精彩对决</p>
+                                <span class="venue-tag">田径场</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">15:00</div>
+                            <div class="timeline-event">
+                                <h4>乒乓球单打决赛</h4>
+                                <p>男女单打金牌赛</p>
+                                <span class="venue-tag">乒乓球馆</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">20:00</div>
+                            <div class="timeline-event">
+                                <h4>体操男子全能决赛</h4>
+                                <p>世界级水平竞技</p>
+                                <span class="venue-tag">体操馆</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第四天 -->
+                <div class="date-content" id="day4">
+                    <h2 class="date-title">第四天 - 11月12日</h2>
+                    <div class="schedule-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-time">09:00</div>
+                            <div class="timeline-event">
+                                <h4>女子4x100米接力预赛</h4>
+                                <p>团队协作的较量</p>
+                                <span class="venue-tag">田径场</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">14:00</div>
+                            <div class="timeline-event">
+                                <h4>游泳200米蝶泳决赛</h4>
+                                <p>技术型项目金牌争夺</p>
+                                <span class="venue-tag">游泳馆</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">16:30</div>
+                            <div class="timeline-event">
+                                <h4>男子篮球半决赛</h4>
+                                <p>强强对话</p>
+                                <span class="venue-tag">篮球馆</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">19:30</div>
+                            <div class="timeline-event">
+                                <h4>女子体操全能决赛</h4>
+                                <p>美感与力量并存</p>
+                                <span class="venue-tag">体操馆</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第五天 -->
+                <div class="date-content" id="day5">
+                    <h2 class="date-title">第五天 - 11月13日</h2>
+                    <div class="schedule-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-time">09:30</div>
+                            <div class="timeline-event">
+                                <h4>男子4x100米接力决赛</h4>
+                                <p>速度与默契的终极考验</p>
+                                <span class="venue-tag">田径场</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">14:00</div>
+                            <div class="timeline-event">
+                                <h4>女子篮球决赛</h4>
+                                <p>冠军之战</p>
+                                <span class="venue-tag">篮球馆</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">17:00</div>
+                            <div class="timeline-event">
+                                <h4>游泳4x100米混合泳接力决赛</h4>
+                                <p>团队综合实力展示</p>
+                                <span class="venue-tag">游泳馆</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">20:00</div>
+                            <div class="timeline-event">
+                                <h4>闭幕式</h4>
+                                <p>庆祝盛会圆满成功</p>
+                                <span class="venue-tag">主体育场</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>2025年全国全运会</h3>
+                    <p>激情与梦想的盛会</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="events.html">赛事介绍</a></li>
+                        <li><a href="athletes.html">运动员</a></li>
+                        <li><a href="schedule.html">赛程</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>联系我们</h3>
+                    <p>邮箱: info@games2025.com</p>
+                    <p>电话: 400-123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025年全国全运会. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/interactions.js"></script>
+    <script src="js/enhanced-interactions.js"></script>
+</body>
+</html>
